@@ -19,3 +19,12 @@ html{
     z-index: 1;
 
 }
+
+/* STAR BACKGROUND */
+#star-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    background: radial-gradient(circle at top, #0b0f2a, #000);
+}
