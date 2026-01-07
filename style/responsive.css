@@ -1,0 +1,170 @@
+/*tablet*/
+@media screen and (max-width: 1000px){
+    .black-hole-box video{
+        margin-top: -20%;
+    }
+    .hero-info{
+        margin-top: 0;
+    }
+    .hero-info h1 {
+        font-size: 40px;
+        max-width: 400px;
+        line-height: 40px;
+    }
+    .hero-info p{
+        max-width: 300px;
+    }
+    .hero-vid-box{
+        right: 0;
+    }
+    .hero-vid-box video{
+        height: 500px;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .info-cards {
+        grid-template-columns: auto;
+    }
+    .card:nth-child(3){
+        grid-column: span 2;
+        height: 70vh;
+    }
+    .info-cards .card h1{
+        font-size: 20px;
+    }
+    .card:nth-child(3) h1{
+        bottom: 25%;
+    }
+    .card video{
+        height: 65%;
+        margin-top: 5%;
+    }
+    .my-project{
+        margin-bottom: 300px;
+    }
+    .project-vidbox video{
+        width: 250px;
+        margin-left: -100px;
+    }
+    .project-info{
+        padding-left: 0;
+        margin-left: -50px;
+    }
+    .project-info h1{
+        font-size: 20px;
+        max-width: 200px;
+        text-wrap: wrap;
+    }
+    .project-info p{
+        font-size: 10px;
+        max-width: 200px;
+        text-wrap: wrap;
+        min-width: 0;
+    }
+    .skills-box{
+        height: 80vh;
+    }
+    .footer h1{
+        font-size: 20px;
+    }
+}
+
+/*Mobile Responsive*/
+
+@media screen and (max-width: 700px){
+    header{
+        position: fixed;
+        height: 50px;
+    }
+    header ul{
+        display: none!important;
+    }
+    header .box-icons{
+        display: none!important;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    .black-hole-box video{
+        margin-top:-16% ;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .autoBlur{
+        animation: none;
+    }
+    .hero-info{
+        bottom: 5%;
+        top: 20%;
+    }
+    .scroll-down{
+        bottom: 5%;
+    }
+    .hero-info h1{
+        line-height: 50px;
+    }
+    .hero-vid-box{
+        height: 200px;
+        top:5% ;
+        right: 5%;
+    }
+    .card video{
+        width: 100%;
+    }
+    .my-project{
+        margin-bottom: 600px;
+    }
+    .project-card{
+        flex-direction: column;
+        margin-left: 25%;
+        gap: 30px;
+    }
+    .project-info{
+        width: 85% !important;
+    }
+    .project-info h1{
+        text-wrap: nowrap;
+
+    }
+    .project-info p{
+        max-width: 300px;
+    }
+    .Designer{
+        top: 15%;
+        left: 18% !important;
+    }
+    .coder{
+        top: 50%;
+        left: 18%;
+    }
+    .skills-box h1{
+        margin-bottom: 0;
+        margin-top: 70px;
+    }
+    .slider{
+        bottom: 0;
+    }
+    .slider img{
+        width: 60% !important;
+    }
+    .contact-section{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .contact-section .section-title{
+        top: -30px;
+        left: 25%;
+    }
+    .footer h1{
+        font-size: 17px;
+    }
+    .project-vidbox{
+        min-width: 200px;
+    }
+    .menu-icon{
+        display: block !important;
+    }
+
+}
