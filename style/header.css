@@ -134,3 +134,91 @@ header ul li:hover a{
     width: 100%;
     margin-top: -23.5%;
 }
+
+
+/*Sidebar*/
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 70%;
+    width: 0;
+    background-color: #000000b8;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: 0 0 20px rgba(211, 211, 211, 0.411);
+    border-bottom-left-radius: 100%;
+    opacity: 0;
+
+}
+.close-icon{
+    font-size: 50px;
+    color: lightgray;
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+.sidebar ul{
+    padding-left: 20px;
+
+}
+.sidebar ul li{
+    list-style: none;
+    margin-bottom: 30px;
+
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0 0 15px rgba(128, 128, 128, 0.256);
+
+}
+.sidebar .social-icons{
+    padding-left: 20px;
+    margin-top: 60px;
+    text-wrap: nowrap;
+}
+.sidebar .social-icons a{
+    font-size: 35px;
+    padding: 5px 5px;
+    cursor: pointer;
+
+}
+
+/*Open Sidebar Animation*/
+
+.sidebar.open-sidebar{
+    animation: openSidebarAnimation 1.5s forwards;
+
+}
+@keyframes openSidebarAnimation{
+    to{
+        width: 80%;
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+/*Close Sidebar Animation*/
+
+.sidebar.close-sidebar{
+    animation: closeSidebarAnimation 1.5s forwards;
+}
+@keyframes closeSidebarAnimation{
+    from{
+        width: 80%;
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+    to{
+        width: 0;
+        opacity: 0;
+        bottom: 70%;
+        border-bottom-left-radius: 50%;
+    }
+}
