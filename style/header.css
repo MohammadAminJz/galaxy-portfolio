@@ -38,6 +38,19 @@ header {
             0 0 4px rgba(255,255,255,0.3);
 }
 
+.shine{
+    background: linear-gradient(to right, rgb(205, 205, 205), #aaaaaa, #8a8a8a, #636363, #636363, #8a8a8a, #aaaaaa, #cdcdcd);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3.5s linear infinite;
+}
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
 header ul {
     display: flex;
     flex-direction: row;
